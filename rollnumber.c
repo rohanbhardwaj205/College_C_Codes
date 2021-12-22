@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-int main()
+void main()
 {
     int a,i;
     printf("Enter the number of roll numbers you want to enter.\n");
@@ -35,19 +35,21 @@ int main()
             {
                 printf("%dst Entered roll number is: %d \n",i, b[i]);
             }
-            if (i%10==2 && i!=12)
+            else if (i%10==2 && i!=12)
             {
                 printf("%dnd Entered roll number is: %d \n",i, b[i]);
             }
-            if (i%10==3 && i!=13)
+            else if (i%10==3 && i!=13)
             {
                 printf("%drd Entered roll number is: %d \n",i, b[i]);
             }
-            else
+        }
+        else
             {
                 printf("%dth Entered roll number is: %d \n",i, b[i]);
             }
-        }
+        
     }
-    return 0;
+    //return 0;
+    getch();
 }
