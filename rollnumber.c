@@ -6,7 +6,7 @@ void main()
     printf("Enter the number of roll numbers you want to enter.\n");
     scanf("%d",&a);
     printf("Enter the value: ");
-    int b[100];
+    int b[100]; // an array variable is created which can hold number of values as b1,b2,b3...
     for (i=1; i<=a; i++)
     {
         scanf("%d",&b[i]);
@@ -17,40 +17,23 @@ void main()
     }
     for (i=1; i<=a; i++)
     {
-        if (/*i==1 && */i%10==1 && (i%100!=11)) // will print "th" for all values ending with 1 except for 11 and similar values.
+        if (i%10==1 && (i%100!=11)) // will print "st" for all values ending with 1 except for 11 and similar values.
         {
             printf("%dst Entered roll number is: %d \n",i, b[i]);
         }
-        else  if (/*i==2 && */i%10==2 && (i%100!=12)) // will print "nd" for all values ending with 2 except for 12 and similar values.
+        else  if (i%10==2 && (i%100!=12)) // will print "nd" for all values ending with 2 except for 12 and similar values.
         {
             printf("%dnd Entered roll number is: %d \n",i, b[i]);
         }
-        else if (/*i==3 && */i%10==3 && (i%100!=13)) // will print "rd" for all values ending with 3 except for 13 and similar values.
+        else if (i%10==3 && (i%100!=13)) // will print "rd" for all values ending with 3 except for 13 and similar values.
         {
             printf("%drd Entered roll number is: %d \n",i, b[i]);
         }
         else 
         {
-            /*
-            if (i%10==1 && i!=11)
-            {
-                printf("%dst Entered roll number is: %d \n",i, b[i]);
-            }
-            else if (i%10==2 && i!=12)
-            {
-                printf("%dnd Entered roll number is: %d \n",i, b[i]);
-            }
-            else if (i%10==3 && i!=13)
-            {
-                printf("%drd Entered roll number is: %d \n",i, b[i]);
-            }
+            printf("%dth Entered roll number is: %d \n",i, b[i]); // will print "th" at the end of all remaining values that don't follow above rules.
         }
-        else
-            {*/
-                printf("%dth Entered roll number is: %d \n",i, b[i]);
-            }
         
     }
-    //return 0;
     getch();
 }
