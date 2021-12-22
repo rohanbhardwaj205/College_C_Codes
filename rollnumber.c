@@ -17,19 +17,19 @@ void main()
     }
     for (i=1; i<=a; i++)
     {
-        if (i==1 && i%10==1 && (i%100!=11)) // will print "th" for all values ending with 1 except for 11 and similar values.
+        if (/*i==1 && */i%10==1 && (i%100!=11)) // will print "th" for all values ending with 1 except for 11 and similar values.
         {
             printf("%dst Entered roll number is: %d \n",i, b[i]);
         }
-        else  if (i==2 && i%10==2 && (i%100!=12)) // will print "nd" for all values ending with 2 except for 12 and similar values.
+        else  if (/*i==2 && */i%10==2 && (i%100!=12)) // will print "nd" for all values ending with 2 except for 12 and similar values.
         {
             printf("%dnd Entered roll number is: %d \n",i, b[i]);
         }
-        else if (i==3 && i%10==3 && (i%100!=13)) // will print "rd" for all values ending with 3 except for 13 and similar values.
+        else if (/*i==3 && */i%10==3 && (i%100!=13)) // will print "rd" for all values ending with 3 except for 13 and similar values.
         {
             printf("%drd Entered roll number is: %d \n",i, b[i]);
         }
-        else if (i>3)
+        else 
         {
             /*
             if (i%10==1 && i!=11)
