@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
+#include<ctype.h>
 #include<math.h>
 void sum(int,int);
 void subtract(int,int);
@@ -14,7 +15,7 @@ void main()
     printf("Enter the operation you want to be done.\n");
     printf("Input \na for addition.\n s for subtraction.\n p for product. \n q for quotient. \n r for remainder.\n e for power \n");
     scanf("%c",&operation); // Will get input for the operation to be done.
-    tolower(operation); // will lowercase the entered value.
+    tolower(operation); // will lowercase the entered value. //tolower command not working??
     printf("Enter the value of first number \n");
     scanf("%d",&a); // get the input of the first value
     printf("Enter the second value \n");
