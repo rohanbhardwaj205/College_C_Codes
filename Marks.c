@@ -1,7 +1,7 @@
  #include <stdio.h>
- #include <stdlib.h>
+ #include <conio.h>
 
-int main()
+void main()
 {
            int age;
            printf("Enter you age: ");
@@ -17,8 +17,8 @@ int main()
            printf("-----------------------------\n");
            char grade;
            printf("Enter you grade: ");
-           scanf("%c", &grade);
+           scanf("%s", &grade);           //program worked correctly after using string identifier in input.
            printf("Your grade is %c.", grade);
 
-           return 0;
+           getch();
 }
